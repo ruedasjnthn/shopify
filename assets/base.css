@@ -1,3 +1,16 @@
+/* Custom fonts */
+
+@font-face {
+  font-family: 'Opposit Bold';
+  src: url('Opposit-Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Byrd Regular';
+  src: url('Byrd-Regular.otf') format('opentype');
+}
+
+
 /* Color custom properties */
 
 :root,
@@ -1840,7 +1853,7 @@ input[type='checkbox'] {
   }
 
   .header--middle-left {
-    grid-template-areas: 'heading navigation icons';
+    grid-template-areas: 'navigation heading icons';
     grid-template-columns: auto 1fr auto;
     column-gap: 2rem;
   }
@@ -1907,7 +1920,7 @@ input[type='checkbox'] {
 
   .header__heading,
   .header__heading-link {
-    justify-self: start;
+    justify-self: end;
   }
 
   .header--top-center .header__heading-link,
