@@ -521,22 +521,6 @@ table:not([class]) th {
   opacity: 0.7;
 }
 
-a:empty,
-ul:empty,
-dl:empty,
-div:empty,
-section:empty,
-article:empty,
-p:empty,
-h1:empty,
-h2:empty,
-h3:empty,
-h4:empty,
-h5:empty,
-h6:empty {
-  display: none;
-}
-
 .link,
 .customer a {
   cursor: pointer;
@@ -1820,6 +1804,7 @@ input[type='checkbox'] {
   display: block;
   position: relative;
   background-color: rgb(var(--color-background));
+  border-top: 8px solid #E8EFFA
 }
 
 .header-wrapper--border-bottom {
@@ -1832,10 +1817,21 @@ input[type='checkbox'] {
   grid-template-columns: 1fr 2fr 1fr;
   align-items: center;
   padding-top: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1rem; 
 }
 
 @media screen and (min-width: 990px) {
+  .header-wrapper::before {
+    position: absolute;
+    content: '';
+    height: 2px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    background-color: rgb(var(--color-foreground));
+    z-index: 1;
+  }
+  
   .header {
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -1916,6 +1912,9 @@ input[type='checkbox'] {
 @media screen and (min-width: 990px) {
   .header__heading-link {
     margin-left: -0.75rem;
+    background-color: #fff;
+    z-index: 10;
+    position: relative;
   }
 
   .header__heading,
@@ -1971,7 +1970,9 @@ input[type='checkbox'] {
 
 .header__icon--cart {
   position: relative;
-  margin-right: -1.2rem;
+  margin: 0 -1.2rem 0 2rem;
+  background-color: #fff;
+  z-index: 10;
 }
 
 @media screen and (max-width: 989px) {
@@ -1997,6 +1998,8 @@ menu-drawer + .header__search {
 .header__search {
   display: inline-flex;
   line-height: 0;
+  background-color: #fff;
+  z-index: 10;
 }
 
 .header--top-center > .header__search {
@@ -2173,20 +2176,20 @@ details[open] > .header__icon--menu .icon-hamburger {
   transition: text-decoration var(--duration-short) ease;
 }
 
-.header__menu-item:hover span {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
+.header__menu-item:before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: rgb(var(--color-foreground));
+  z-index: 1;
 }
 
-.header__active-menu-item {
-  transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-}
-
-.header__menu-item:hover .header__active-menu-item {
-  text-decoration-thickness: 0.2rem;
+.header__menu-item:hover:before {
+  width: 100%;
+  transition: 0.3s;
 }
 
 .header__submenu {

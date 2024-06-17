@@ -1,106 +1,43 @@
 {
   "sections": {
-    "image_banner": {
-      "type": "image-banner",
-      "settings": {
-        "desktop_text_box_position": "flex-end"
-      },
+    "hero_WEQycT": {
+      "type": "hero",
       "blocks": {
-        "heading": {
-          "type": "heading",
+        "collection_yY9BgG": {
+          "type": "collection",
           "settings": {
-            "heading": "Talk about your brand"
+            "collection": "beach",
+            "image_bg": "shopify:\/\/shop_images\/hero-beach.png",
+            "image_hover": "shopify:\/\/shop_images\/hero-beach-hover.png"
           }
         },
-        "button": {
-          "type": "buttons",
+        "collection_C38wnn": {
+          "type": "collection",
           "settings": {
-            "button_label_1": "Shop all",
-            "button_link_1": "shopify://collections/all",
-            "button_label_2": ""
+            "collection": "denim",
+            "image_bg": "shopify:\/\/shop_images\/hero-denim.png",
+            "image_hover": "shopify:\/\/shop_images\/hero-denim-hover.png"
+          }
+        },
+        "collection_ptQH6a": {
+          "type": "collection",
+          "settings": {
+            "collection": "back-to-work",
+            "image_bg": "shopify:\/\/shop_images\/hero-work.png",
+            "image_hover": "shopify:\/\/shop_images\/hero-work-hover.png"
           }
         }
       },
       "block_order": [
-        "heading",
-        "button"
-      ]
-    },
-    "rich_text": {
-      "type": "rich-text",
-      "blocks": {
-        "heading": {
-          "type": "heading"
-        },
-        "text": {
-          "type": "text"
-        },
-        "button": {
-          "type": "button"
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ]
-    },
-    "featured_products": {
-      "type": "featured-collection",
+        "collection_yY9BgG",
+        "collection_C38wnn",
+        "collection_ptQH6a"
+      ],
       "settings": {
-        "title": "Featured products",
-        "collection": "all",
-        "image_ratio": "square"
       }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "video": {
-          "type": "video"
-        },
-        "product": {
-          "type": "product"
-        },
-        "collection": {
-          "type": "collection"
-        }
-      },
-      "block_order": [
-        "video",
-        "product",
-        "collection"
-      ]
-    },
-    "video": {
-      "type": "video"
-    },
-    "multi_column": {
-      "type": "multicolumn",
-      "blocks": {
-        "column1": {
-          "type": "column"
-        },
-        "column2": {
-          "type": "column"
-        },
-        "column3": {
-          "type": "column"
-        }
-      },
-      "block_order": [
-        "column1",
-        "column2",
-        "column3"
-      ]
     }
   },
   "order": [
-    "image_banner",
-    "rich_text",
-    "featured_products",
-    "collage",
-    "video",
-    "multi_column"
+    "hero_WEQycT"
   ]
 }
