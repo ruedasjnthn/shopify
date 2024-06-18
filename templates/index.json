@@ -35,9 +35,55 @@
       ],
       "settings": {
       }
+    },
+    "weekly_picks_DPnQbd": {
+      "type": "weekly-picks",
+      "settings": {
+        "collection": "weekly-picks"
+      }
+    },
+    "collection_grid_LeDqHe": {
+      "type": "collection-grid",
+      "blocks": {
+        "collection_gA7bmz": {
+          "type": "collection",
+          "settings": {
+            "collection": "tops"
+          }
+        },
+        "collection_CtbaDG": {
+          "type": "collection",
+          "settings": {
+            "collection": "bottoms"
+          }
+        },
+        "collection_RDEXNX": {
+          "type": "collection",
+          "settings": {
+            "collection": "dresses"
+          }
+        },
+        "collection_7RUCx8": {
+          "type": "collection",
+          "settings": {
+            "collection": "denim"
+          }
+        }
+      },
+      "block_order": [
+        "collection_gA7bmz",
+        "collection_CtbaDG",
+        "collection_RDEXNX",
+        "collection_7RUCx8"
+      ],
+      "settings": {
+        "header": "take a look around!"
+      }
     }
   },
   "order": [
-    "hero_WEQycT"
+    "hero_WEQycT",
+    "weekly_picks_DPnQbd",
+    "collection_grid_LeDqHe"
   ]
 }

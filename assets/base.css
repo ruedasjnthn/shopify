@@ -2280,3 +2280,123 @@ details-disclosure > details {
   background: var(--gradient-background);
   background-attachment: fixed;
 }
+
+.product-bubble {
+  position: absolute;
+  top: 27px;
+  right: 32px;
+  height: 95px;
+  width: 90px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  text-align: center;
+  z-index: 1;
+}
+
+.bubble--sale > span,
+.bubble--fave > span {
+  color: #fff;
+}
+
+.bubble--new > span {
+  color: black
+}
+
+.product-bubble > span {
+  position: absolute;
+  font-size: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.social-sharing {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+.social-sharing a {
+  display: block;
+  margin-right: 5px;
+  padding: 8px 10px;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgb(var(--color-foreground));
+  font-family: var(--font-heading-family);
+  text-transform: uppercase;
+}
+
+.social-sharing .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 4px;
+}
+
+.social-sharing .icon-facebook {
+  color: #3b5998;
+}
+
+.social-sharing .icon-pinterest {
+  color: #cb2027;
+}
+
+.social-sharing .icon-twitter {
+  color: #00aced;
+}
+
+.moo-footer {
+  background-color: #E8EFFA;
+  height: 60px;
+  margin-top: 100px;
+}
+
+.moo-footer a {
+  font-family: var(--font-heading-family);
+  font-size: 24px;
+  margin-left: 40px;
+  position: relative;
+  top: -20px;
+  color: rgb(var(--color-foreground));
+  text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .moo-footer a {
+    margin-left: 100px;
+    font-size: 28px;
+    top: -25px;
+  }
+}
+
+#toTop {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 10000;
+  width: 100px;
+  height: 100px;
+  border: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: transparent;
+}
+
+#toTop::before {
+  position: absolute;
+  content: '';
+  top: 25px;
+  left: 35px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 40px solid #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#toTop:hover::before {
+  border-bottom: 40px solid #656363;
+}
